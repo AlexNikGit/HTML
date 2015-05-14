@@ -1,0 +1,59 @@
+/* Таблицы стилей, которые загружаются в начале страницы определяют основные параметры тегов, устанаваливаются на класс
+элемента (.class_name). Таблицы стилей, загружаемые в конце страницы определяют дополнительные визуальные эффекты,
+анимацию и т.д., устанавливаются по идентификатору элемента */
+
+body {
+   z-index: 0;
+}
+
+.clsPageLayout {
+/*   border: 3px solid darkblue;*/
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+}
+.clsAngleLeft {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 256px;
+   height: 42px;
+   background-image: url("../img/divAngleLeft.svg");
+   z-index: 1001;
+}
+.clsAngleRight {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 256px;
+   height: 42px;
+   background-image: url("../img/divAngleRight.svg");
+   z-index: 1001;
+}
+.clsMenuHeader {
+   position: relative;
+   height: 75px;
+   margin: 0 230px;
+   background: url("../img/menuHeader.svg") no-repeat;
+   background-size: contain;
+   z-index: 1000;
+}
+.clsPanelLeft {
+
+}
+.clsPanelRight {
+
+}
+.clsMenuFooter {
+   position: absolute;
+   width: 332px;
+   height: 42px;
+   bottom: 0;
+   left: 50%;
+   margin-left: -166px;
+   background-image: url("../img/menuFooter.svg");
+   z-index: 1;
+}
