@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 40">
-   <path stroke-linejoin="null" d="m249 1h-248c19 .5 19 37.5 39 38h209v-38z" stroke-linecap="null" fill="#faf" stroke="#000"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 50">
+   <defs>
+      <linearGradient id="gradMain" x1="0%" y1="0%" x2="0%" y2="100%">
+         <stop offset="0%" style="stop-color:rgb(235,241,246); stop-opacity:1" />
+         <stop offset="50%" style="stop-color:rgb(171,211,238); stop-opacity:1" />
+         <stop offset="51%" style="stop-color:rgb(137,195,235); stop-opacity:1" />
+         <stop offset="100%" style="stop-color:rgb(213,235,251); stop-opacity:1" />
+      </linearGradient>
+   </defs>
+   <path d="m 299.5,0.5 -299,0 c 19,0.5 20,48.5 40,49 l 259,0 z" style="fill:url(#gradMain); stroke:#000000"/>
 </svg>

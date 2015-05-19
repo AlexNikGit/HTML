@@ -6,8 +6,7 @@ body {
    z-index: 0;
 }
 
-.clsPageLayout {
-/*   border: 3px solid darkblue;*/
+.clPageLayout {
    position: fixed;
    top: 0;
    right: 0;
@@ -15,69 +14,86 @@ body {
    left: 0;
    z-index: 1;
 }
-.clsAngleLeft {
+
+.cllAngleLeft {
    position: absolute;
    top: -1px;
-   left: -1px;
-   width: 250px;
-   height: 40px;
+   left: 0;
+   width: 300px;
+   height: 50px;
    background: url("../img/divAngleLeft.svg") no-repeat;
    z-index: 1002;
 }
-.clsAngleRight {
+.cllAngleRight {
    position: absolute;
    top: -1px;
-   right: -1px;
-   width: 250px;
-   height: 40px;
+   right: 0;
+   width: 300px;
+   height: 50px;
    background: url("../img/divAngleRight.svg") no-repeat;
    z-index: 1002;
 }
-.clsMenuHeader {
+
+.cllMenuHeader {
    position: relative;
    display: block;
-   top: -1px;
+   top: 0;
    height: 75px;
-   margin: 0 228px;
+   margin: 0 283px;
    z-index: 1001;
-   border-radius: 20px;
-   border: 3px solid #000000;
-   background: #CCF no-repeat;
+   border-radius: 15px;
+   border: 1px solid #000000;
+   background: linear-gradient(to bottom, rgba(187,187,187,1) 0%,rgba(85,85,85,1) 100%)
 }
-.clsPanelLeft {
+
+.cllPanelLeft {
    position: absolute;
    display: block;
-   top: 38px;
-   bottom: -10px;
-   left: -10px;
-   width: 300px;
+   top: 45px;
+   bottom: 0;
+   left: 0;
+   width: 260px;
    z-index: 1000;
-   border-radius: 10px;
-   border: 2px solid #000000;
-   background: #FFD no-repeat;
+   border: 1px solid #000000;
+   background: linear-gradient(225deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%)
 }
-.clsPanelRight {
+.cllPanelRight {
    position: absolute;
    display: block;
-   top: 38px;
-   bottom: -10px;
-   right: -10px;
-   width: 300px;
+   top: 45px;
+   bottom: 0;
+   right: 0;
+   width: 260px;
    z-index: 1000;
-   border-radius: 10px;
-   border: 2px solid #000000;
-   background: #FFD no-repeat;
+   border: 1px solid #000000;
+   background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%)
 }
-.clsMenuFooter {
+
+.cllMenuFooter {
    position: absolute;
    display: block;
-   width: 332px;
-   height: 42px;
-   bottom: -10px;
+   width: 400px;
+   height: 50px;
+   bottom: 0;
    left: 50%;
-   margin-left: -166px;
+   margin-left: -200px;
    z-index: 1001;
-   border-radius: 10px;
-   border: 2px solid #000000;
-   background: #CCF no-repeat;
+   border-radius: 15px;
+   border: 1px solid #000000;
+   background: linear-gradient(to bottom, rgba(119,119,119,1) 0%,rgba(51,51,51,1) 100%);
+}
+
+.clModalScreen {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: rgba(0,0,0,0.6);
+   z-index: 1003;
+   opacity:1;
+   pointer-events: auto;
+   /*display: block;*/
+   display: none;
+   transition: opacity 400ms ease-in;
 }
