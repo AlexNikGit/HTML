@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 5000" width="3000px" height="5000px">
-   <path vector-effect="non-scaling-stroke" d="m 1,1 0,4998 2998,0 0,-2399.6563 c -132.8601,-5.1799 -130.31,-194.2822 0,-198.6875 L 2999,1 1,1 z"
+   <path d="m 1,1 0,4998 2998,0 0,-2399.6563 c -132.8601,-5.1799 -130.31,-194.2822 0,-198.6875 L 2999,1 1,1 z"
+         vector-effect="non-scaling-stroke"
          style="stroke:#000; stroke-width:2.0; fill:#555; opacity:1.0"/>
 </svg>

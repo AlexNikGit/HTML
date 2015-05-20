@@ -8,5 +8,7 @@
          <stop offset="100%" style="stop-color:rgb(213,235,251); stop-opacity:1" />
       </linearGradient>
    </defs>
-   <path d="m 299.5,0.5 -299,0 c 19,0.5 20,48.5 40,49 l 259,0 z" style="fill:url(#gradMain); stroke:#000000"/>
+   <path d="m 299.5,0.5 -299,0 c 19,0.5 20,48.5 40,49 l 259,0 z"
+         vector-effect="non-scaling-stroke"
+         style="fill:url(#gradMain); stroke:#000000"/>
 </svg>

@@ -1,15 +1,4 @@
-#wdgLogin{
-   position:fixed;
-   top: 50%;
-   left: 50%;
-   width: 500px;
-   height: 400px;
-   margin-top: -200px;
-   margin-left: -250px;
-   z-index: 1004;
-}
-
-#wdgLogin #divLoginForm {
+#wdgLoginForm {
    position: absolute;
    top: 0;
    width: 100%;
@@ -19,35 +8,35 @@
    z-index: 1005;
 }
 
-#divLoginForm h1 {
+#wdgLoginForm h1 {
    font-size: 48px;
    color: #066A75;
    padding: 2px 0 30px;
    font-weight: bold;
    text-align: center;
 }
-#divLoginForm a {
+#wdgLoginForm a {
    color: rgb(95, 155, 198);
    text-decoration: underline;
 }
-#divLoginForm p{
+#wdgLoginForm p{
    margin-bottom:15px;
 }
-#divLoginForm p:first-child{
+#wdgLoginForm p:first-child{
    margin: 0;
 }
-#divLoginForm label{
+#wdgLoginForm label{
    color: rgb(64, 92, 96);
    position: relative;
 }
 
-#divLoginForm input:not([type="checkbox"]){
+#wdgLoginForm input:not([type="checkbox"]){
    width: 92%;
    margin-top: 4px;
    padding: 10px 5px 10px 32px;
 }
 
-#divLoginForm p.button input{
+#wdgLoginForm p.button input{
    width: 30%;
    cursor: pointer;
    background: rgb(61, 157, 179);
@@ -58,8 +47,8 @@
    margin-bottom: 10px;
 }
 
-#divLoginForm p.button input:active,
-#divLoginForm p.button input:focus{
+#wdgLoginForm p.button input:active,
+#wdgLoginForm p.button input:focus{
    background: rgb(40, 137, 154);
    position: relative;
    top: 1px;
