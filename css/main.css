@@ -5,11 +5,19 @@
 body {
    z-index: 0;
 }
-
 .clPageLayout {
    z-index: 1;
 }
+
 /* ------------------------------------------------------------------------------------------------------------------ */
+.cllWorkspace {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 100;
+}
 .cllEnter {
    position: fixed;
    display: none;
@@ -17,25 +25,17 @@ body {
    right: 0;
    bottom: 0;
    left: 0;
-   z-index: 100;
-}
-.cllWorkspace {
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   z-index: 200;
+   z-index: 300;
 }
 .cllLogin {
    position:absolute;
-   display: none;
+   display: block;
    top: 50%;
    left: 50%;
-   width: 500px;
-   height: 400px;
-   margin-top: -200px;
-   margin-left: -250px;
+   width: 520px;
+   height: 270px;
+   margin-top: -135px;
+   margin-left: -260px;
    z-index: 300;
 }
 
@@ -53,7 +53,56 @@ body {
    transition: opacity 400ms ease-in;
 }
 /* ------------------------------------------------------------------------------------------------------------------ */
-
+.cllSideLeft {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   width: 50%;
+   height: 100%;
+   background: url("../img/ilSideLeft.svg") 100% 50% no-repeat;
+   transition: transform 1000ms ease-in-out;
+   z-index: 301;
+}
+.cllSideLeft.active {
+   transform: translate(-100%,0);
+}
+.cllSideRight {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   width: 50%;
+   height: 100%;
+   background: url("../img/ilSideRight.svg") 0 50% no-repeat;
+   transition: transform 1000ms ease-in-out;
+   z-index: 301;
+}
+.cllSideRight.active {
+   transform: translate(100%,0);
+}
+.cllEnterButton {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   width: 202px;
+   height: 202px;
+   margin-top: -101px;
+   margin-left: -101px;
+   opacity: 1;
+   transition: all 1250ms ease;
+   z-index: 302;
+}
+.cllEnterButton.active {
+   opacity: 0.1;
+   transform: scale(0.1);
+}
+#ilEnterButton a {
+   display: block;
+   height: 100%;
+   width: 100%;
+   background: url("../img/btnEnter.svg") no-repeat;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 .cllAngleLeft {
@@ -63,7 +112,7 @@ body {
    width: 300px;
    height: 50px;
    background: url("../img/wdlAngleLeft.svg") no-repeat;
-   z-index: 297;
+   z-index: 197;
 }
 .cllAngleRight {
    position: absolute;
@@ -72,7 +121,7 @@ body {
    width: 300px;
    height: 50px;
    background: url("../img/wdlAngleRight.svg") no-repeat;
-   z-index: 297;
+   z-index: 197;
 }
 
 .cllMenuHeader {
@@ -81,10 +130,10 @@ body {
    top: 0;
    height: 75px;
    margin: 0 283px;
-   z-index: 296;
-   border-radius: 15px;
+   border-radius: 0 0 15px 15px;
    border: 1px solid #000000;
-   background: linear-gradient(to bottom, rgba(187,187,187,1) 0%,rgba(85,85,85,1) 100%)
+   background: linear-gradient(to bottom, rgba(187,187,187,1) 0%,rgba(85,85,85,1) 100%);
+   z-index: 196;
 }
 .cllMenuFooter {
    position: absolute;
@@ -94,10 +143,10 @@ body {
    bottom: 0;
    left: 50%;
    margin-left: -200px;
-   z-index: 296;
-   border-radius: 15px;
+   border-radius: 15px 15px 0 0;
    border: 1px solid #000000;
    background: linear-gradient(to bottom, rgba(119,119,119,1) 0%,rgba(51,51,51,1) 100%);
+   z-index: 196;
 }
 
 .cllPanelLeft {
@@ -107,9 +156,9 @@ body {
    bottom: 0;
    left: 0;
    width: 260px;
-   z-index: 295;
    border: 1px solid #000000;
-   background: linear-gradient(225deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%)
+   background: linear-gradient(225deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%);
+   z-index: 195;
 }
 .cllPanelRight {
    position: absolute;
@@ -118,7 +167,7 @@ body {
    bottom: 0;
    right: 0;
    width: 260px;
-   z-index: 295;
    border: 1px solid #000000;
-   background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%)
+   background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%);
+   z-index: 195;
 }
