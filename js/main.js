@@ -8,4 +8,8 @@ function procEnterClick( ) {
       document.getElementById( "wdlEnter" ).style.display = "none";
       document.getElementById( "wdlLogin" ).style.display = "block";
    }, 1500);
-}
+};
+
+function procMenuHeader( ) { document.getElementById( "wdlMenuHeader").classList.toggle( "active" ); }
+function procPanelLeft( ) { document.getElementById( "wdlPanelLeft").classList.toggle( "active" ); }
+function procPanelRight( ) { document.getElementById( "wdlPanelRight").classList.toggle( "active" ); }

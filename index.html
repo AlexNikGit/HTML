@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <title></title>
    <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link rel="stylesheet" type="text/css" href="css/fonts.css">
    <link rel="stylesheet" type="text/css" href="css/wdgLoginForm.css">
    <script src="js/main.js" type="text/javascript"></script>
 </head>
@@ -28,30 +29,44 @@
    </div>
    <div id="wdlWorkspace" class="cllWorkspace">
       <div id="wdlAngleLeft"  class="cllAngleLeft"></div>
-      <div id="wdlMenuHeader" class="cllMenuHeader"></div>
+      <div id="wdlMenuHeader" class="cllMenuHeader">
+         <button class="btnMenuHeader" onclick="procMenuHeader( )" >скрыть</button>
+      </div>
       <div id="wdlAngleRight" class="cllAngleRight"></div>
-      <div id="wdlPanelLeft"  class="cllPanelLeft"></div>
-      <div id="wdlPanelRight" class="cllPanelRight"></div>
+      <div id="wdlPanelLeft"  class="cllPanelLeft">
+         <button class="btnPanelLeft" onclick="procPanelLeft( )" ></button>
+      </div>
+      <div id="wdlPanelRight" class="cllPanelRight">
+         <button class="btnPanelRight" onclick="procPanelRight( )" ></button>
+      </div>
       <div id="wdlMenuFooter" class="cllMenuFooter"></div>
    </div>
    <div id="wdlLogin" class="cllLogin">
       <div id="wdgLoginForm" class="clsLoginForm">
          <form action="index.html">
-            <div class="login"><h1>ВХОД</h1></div>
+            <div class="title"><h1>ВХОД</h1></div>
             <div class="group">
-               <label for="m">Мужcкой</label>
-               <input id="m" type="text" name="username" value="azmind" />
+               <input type="text" name="partner" id="partner" placeholder="Введите свой ID"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Введите ID организации'" />
+               <label for="partner">[ организация ]</label>
             </div>
-            <div class="username">Username:</div>
-            <div class="password">Password:</div>
-            <div class="username-field">
-               <input type="text" name="username" value="azmind" />
+            <div class="username">
+               <label for="user">Пользователь:</label>
+               <input type="text" name="username" id="user" placeholder="Имя пользователя"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Имя пользователя'" />
             </div>
-            <div class="password-field">
-               <input type="password" name="password" value="azmind" />
+            <div class="password">
+               <label for="pass">Пароль:</label>
+               <input type="password" name="password" id="pass" placeholder="Пароль"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Пароль'" />
             </div>
-            <input type="checkbox" name="remember-me" id="remember-me" /><label for="remember-me">Remember me</label>
-            <div class="forgot-usr-pwd">Forgot <a href="#">username</a> or <a href="#">password</a>?</div>
+            <div class="remember_me">
+               <input type="checkbox" name="remember_me" id="remember" />
+               <label for="remember">Запомнить меня</label>
+            </div>
             <button class="enter_button"><img src="ico/enter_arrow.svg" alt="стрелочка">ВОЙТИ</button>
          </form>
       </div>
