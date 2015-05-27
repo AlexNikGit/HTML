@@ -20,7 +20,7 @@ body {
 }
 .cllEnter {
    position: fixed;
-   display: none;
+   display: block;
    top: 0;
    right: 0;
    bottom: 0;
@@ -29,7 +29,7 @@ body {
 }
 .cllLogin {
    position:absolute;
-   display: block;
+   display: none;
    top: 50%;
    left: 50%;
    width: 520px;
@@ -67,6 +67,12 @@ body {
 .cllSideLeft.active {
    transform: translate(-100%,0);
 }
+#ilSideLeft img {
+   margin: 30px 0 0 40px;
+   width: 175px;
+   height: auto;
+}
+
 .cllSideRight {
    position: absolute;
    top: 0;
@@ -133,27 +139,27 @@ body {
    border-radius: 0 0 15px 15px;
    border: 1px solid #000000;
    background: linear-gradient(to bottom, rgba(187,187,187,1) 0%,rgba(85,85,85,1) 100%);
-   transition: transform 300ms ease-in-out;
+   transition: transform 500ms ease-in-out;
    z-index: 196;
 }
 .cllMenuHeader.active {
-   transform: translate(0,-70px);
+   transform: translate(0,-73px);
 }
-#wdlMenuHeader .btnMenuHeader {
+#wdlMenuHeader .clsMenuHeader {
    position: absolute;
    top: 100%;
    left: 50%;
-   width: 50px;
-   height: 14px;
-   margin-top: -7px;
-   margin-left: -25px;
-   padding: 0;
-   font-family: Squares;
-   font-size: 8px;
-   border: 1px solid #000000;
-   border-radius: 5px;
-   background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%);
+   width: 30px;
+   height: 16px;
+   margin-top: -3px;
+   margin-left: -15px;
+   border: none;
+   background: url('../ico/panel_up.svg') no-repeat center;
+   opacity: 0;
+   transition: opacity 300ms ease;
 }
+#wdlMenuHeader:hover .clsMenuHeader { opacity: 1.0; }
+
 .cllMenuFooter {
    position: absolute;
    display: block;
@@ -177,25 +183,25 @@ body {
    width: 260px;
    border: 1px solid #000000;
    background: linear-gradient(225deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%);
-   transition: transform 300ms ease-in-out;
+   transition: transform 500ms ease-in-out;
    z-index: 195;
 }
 .cllPanelLeft.active {
    transform: translate( -255px, 0 );
 }
-#wdlPanelLeft .btnPanelLeft {
+#wdlPanelLeft .clsPanelLeft {
    position: absolute;
    top: 3px;
    left: 100%;
    width: 20px;
    height: 20px;
-   margin-left: -5px;
-   padding: 0;
-   font-family: Squares;
-   font-size: 8px;
+   margin-left: -9px;
    border: none;
-   background: white url('../ico/close_left.svg') no-repeat center;
+   background: url('../ico/left_close.svg') no-repeat center;
+   opacity: 0;
+   transition: opacity 300ms ease;
 }
+#wdlPanelLeft:hover .clsPanelLeft { opacity: 1.0; }
 
 .cllPanelRight {
    position: absolute;
@@ -206,21 +212,21 @@ body {
    width: 260px;
    border: 1px solid #000000;
    background: linear-gradient(135deg, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(187,187,187,1) 100%);
-   transition: transform 300ms ease-in-out;
+   transition: transform 500ms ease-in-out;
    z-index: 195;
 }
 .cllPanelRight.active {
    transform: translate( 255px, 0 );
 }
-#wdlPanelRight .btnPanelRight {
+#wdlPanelRight .clsPanelRight {
    position: absolute;
    top: 3px;
-   left: -15px;
+   left: -11px;
    width: 20px;
    height: 20px;
-   padding: 0;
-   font-family: Squares;
-   font-size: 8px;
    border: none;
-   background: white url('../ico/close_right.svg') no-repeat center;
+   background: url('../ico/right_close.svg') no-repeat center;
+   opacity: 0;
+   transition: opacity 300ms ease;
 }
+#wdlPanelRight:hover .clsPanelRight { opacity: 1.0; }
