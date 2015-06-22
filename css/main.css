@@ -76,7 +76,7 @@ body {
    position: absolute;
    display: none;
    top: 50%;
-   right: 130px;
+   right: 250px;
    height: 28px;
    margin-top: -16px;
    z-index: 302;
@@ -101,7 +101,7 @@ body {
    position: absolute;
    display: none;
    top: 50%;
-   left: 130px;
+   left: 250px;
    height: 28px;
    margin-top: -16px;
    z-index: 302;
