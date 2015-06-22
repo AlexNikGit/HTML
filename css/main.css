@@ -72,6 +72,16 @@ body {
    width: 175px;
    height: auto;
 }
+#ilSideLeft #wdgArrowBarLeft {
+   position: absolute;
+   display: none;
+   top: 50%;
+   right: 130px;
+   height: 28px;
+   margin-top: -16px;
+   z-index: 302;
+}
+#ilSideLeft #wdgArrowBarLeft.active { display: block; }
 
 .cllSideRight {
    position: absolute;
@@ -87,6 +97,17 @@ body {
 .cllSideRight.active {
    transform: translate(100%,0);
 }
+#ilSideRight #wdgArrowBarRight {
+   position: absolute;
+   display: none;
+   top: 50%;
+   left: 130px;
+   height: 28px;
+   margin-top: -16px;
+   z-index: 302;
+}
+#ilSideRight #wdgArrowBarRight.active { display: block; }
+
 .cllEnterButton {
    position: fixed;
    top: 50%;
@@ -110,34 +131,6 @@ body {
    background: url("../img/btnEnter.svg") no-repeat;
 }
 
-.clsArrowBarLeft {
-   position: fixed;
-   display: none;
-   top: 50%;
-   left: 50%;
-   width: 150px;
-   height: 32px;
-   z-index: 302;
-   margin-top: -16px;
-   margin-left: -300px;
-}
-.clsArrowBarLeft.active {
-   display: block;
-}
-.clsArrowBarRight {
-   position: fixed;
-   display: none;
-   top: 50%;
-   left: 50%;
-   width: 150px;
-   height: 32px;
-   z-index: 302;
-   margin-top: -16px;
-   margin-left: 150px;
-}
-.clsArrowBarRight.active {
-   display: block;
-}
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 .cllAngleLeft {

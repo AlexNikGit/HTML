@@ -9,7 +9,7 @@ function procEnterClick( ) {
       document.getElementById( "wdlLogin" ).style.display = "block";
    }, 1500);
 }
-var arrowAnimationStep = 0;
+var arrowAnimationStep = 1;
 var arrowAnimationTimer;
 function doAnimateArrow( ) {     /* переделать на анимацию в CSS через добавочные стили, типа active и раздвижение в стороны вместе с разделительными частями экрана */
    if( arrowAnimationStep == 1 ) {
@@ -59,19 +59,13 @@ function doAnimateArrow( ) {     /* переделать на анимацию �
       document.getElementById("arrBR4").setAttribute("fill", "#e1e1e1");
       arrowAnimationStep = 1;
    }
-   arrowAnimationTimer = setTimeout(doAnimateArrow, 500);
+   arrowAnimationTimer = setTimeout(doAnimateArrow, 200);
 }
 function procEnterMFocus( ) {
    document.getElementById( "wdgArrowBarLeft").classList.toggle( "active" );
    document.getElementById( "wdgArrowBarRight").classList.toggle( "active" );
-   if( !arrowAnimationStep ) {
-      arrowAnimationStep = 1;
-      doAnimateArrow( );
-   }
-   else {
-      arrowAnimationStep = 0;
-      clearTimeout( arrowAnimationTimer );
-   }
+   clearTimeout( arrowAnimationTimer );
+   doAnimateArrow( );
 }
 
 function procMenuHeader( ) {
