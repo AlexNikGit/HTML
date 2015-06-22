@@ -24,8 +24,33 @@
       <div id="ilSideLeft"  class="cllSideLeft">
          <img src="img/txtLogo.svg">
       </div>
-      <div id="ilEnterButton"  class="cllEnterButton"><a href="javascript:void(0)" onclick="procEnterClick( )"></a></div>
-      <!-- Добавить стрелочки анимированные миганием в стороны -->
+      <svg id="wdgArrowBarLeft" class="clsArrowBarLeft">       <!-- arrTL/arrBL - Arrow Top/Bottom Left -->
+         <path id="arrTL1" fill="#afafaf" d="m122.54 15.574l26.97-15.574-9.31 15.574h-17.661"/>
+         <path id="arrBL1" fill="#969696" d="m122.54 16.426l26.973 15.573-9.312-15.573z"/>
+         <path id="arrTL2" fill="#afafaf" d="M92.026,15.574,119,0.0005l-9.312,15.573h-17.664"/>
+         <path id="arrBL2" fill="#969696" d="m92.03 16.426l26.973 15.573-9.312-15.573z"/>
+         <path id="arrTL3" fill="#afafaf" d="m61.51 15.574l26.972-15.574-9.312 15.574h-17.66"/>
+         <path id="arrBL3" fill="#969696" d="m61.51 16.426l26.973 15.573-9.312-15.573z"/>
+         <path id="arrTL4" fill="#afafaf" d="m31 15.574l26.973-15.573-9.312 15.573h-17.661"/>
+         <path id="arrBL4" fill="#969696" d="m31 16.426l26.973 15.573-9.312-15.573z"/>
+         <path id="arrTL5" fill="#afafaf" d="m.488 15.574l26.973-15.574-9.312 15.574h-17.661"/>
+         <path id="arrBL5" fill="#969696" d="m.488 16.426l26.973 15.573-9.312-15.573z"/>
+      </svg>
+      <div id="ilEnterButton" class="cllEnterButton">
+         <a href="javascript:void(0)" onclick="procEnterClick( )" onmouseover="procEnterMFocus( )" onmouseout="procEnterMFocus( )"></a>
+      </div>
+      <svg id="wdgArrowBarRight" class="clsArrowBarRight">      <!-- arrTR/arrBR - Arrow Top/Bottom Right -->
+         <path id="arrTR1" fill="#afafaf" d="M27.461,15.574,0.491,0,9.801,15.574h17.661"/>
+         <path id="arrBR1" fill="#969696" d="M27.461,16.426,0.488,31.999,9.8,16.426z"/>
+         <path id="arrTR2" fill="#afafaf" d="M57.975,15.574,31.001,0.0005l9.312,15.573h17.664"/>
+         <path id="arrBR2" fill="#969696" d="M57.971,16.426,30.998,31.999,40.31,16.426z"/>
+         <path id="arrTR3" fill="#afafaf" d="M88.491,15.574,61.519,0,70.831,15.574h17.66"/>
+         <path id="arrBR3" fill="#969696" d="m88.49 16.426l-26.973 15.573 9.312-15.573z"/>
+         <path id="arrTR4" fill="#afafaf" d="M119,15.574,92.028,0.001,101.34,15.574h17.661"/>
+         <path id="arrBR4" fill="#969696" d="m119 16.426l-26.972 15.573 9.312-15.573z"/>
+         <path id="arrTR5" fill="#afafaf" d="M149.51,15.574,122.54,0l9.312,15.574h17.661"/>
+         <path id="arrBR5" fill="#969696" d="m149.51 16.426l-26.97 15.573 9.31-15.573z"/>
+      </svg>
       <div id="ilSideRight"  class="cllSideRight"></div>
    </div>
    <div id="wdlWorkspace" class="cllWorkspace">

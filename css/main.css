@@ -110,6 +110,35 @@ body {
    background: url("../img/btnEnter.svg") no-repeat;
 }
 
+.clsArrowBarLeft {
+   position: fixed;
+   display: none;
+   top: 50%;
+   left: 50%;
+   width: 150px;
+   height: 32px;
+   z-index: 302;
+   margin-top: -16px;
+   margin-left: -300px;
+}
+.clsArrowBarLeft.active {
+   display: block;
+}
+.clsArrowBarRight {
+   position: fixed;
+   display: none;
+   top: 50%;
+   left: 50%;
+   width: 150px;
+   height: 32px;
+   z-index: 302;
+   margin-top: -16px;
+   margin-left: 150px;
+}
+.clsArrowBarRight.active {
+   display: block;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 .cllAngleLeft {
    position: absolute;
